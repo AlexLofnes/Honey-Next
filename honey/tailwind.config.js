@@ -6,7 +6,16 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",  
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        lineAnim: {
+          '100%, 0%': {'to': {strokeDashoffset: '0'}}
+        }
+      },
+      animation: {
+        lineAnim: "lineAnim 2s ease-in forwards"
+      }
+    },
   },
   plugins: [],
 }
